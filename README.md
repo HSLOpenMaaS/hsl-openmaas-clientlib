@@ -2,6 +2,9 @@
 
 Library for displaying HSL tickets.
 
+## Example projects
+
+You can find example projects for both iOS and Android from `/example/ios` and `/example/android` folders
 
 ## Requirements:
   - react-native >= 0.52.
