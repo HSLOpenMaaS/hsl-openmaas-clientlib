@@ -122,6 +122,13 @@ You can ignore CodePush deployment keys at this point of installation and press 
   ```java
    @Override
     protected String getJSMainModuleName() {
-      return "clientlib"; => return "clientlib";
+      return "example";
+    }
+  ```
+  to this:
+  ```java
+  @Override
+    protected String getJSMainModuleName() {
+      return "clientlib";
     }
   ```
