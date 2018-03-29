@@ -2,6 +2,8 @@
 
 Library for displaying HSL tickets.
 
+Usage requires registration in [HSL OpenMaas developer portal](https://sales-api.hsl.fi/portal).
+
 ## Example projects
 
 You can find example projects for both iOS and Android from `/example/ios` and `/example/android` folders
@@ -43,10 +45,10 @@ You can ignore CodePush deployment keys at this point of installation and press 
 
   3. Add CodePush deployment key to your `info.plist`. You can get the deployment key from HSL OpenMaaS development portal.
 
-  4. Overwrite default CodePush app version to get the correct bundle, e.g.
+  4. Override default CodePush app version to get the correct bundle, e.g.
   ```objectivec
   // Objective C
-  NSString *appVersion = @"0.0.1";
+  NSString *appVersion = @"<HSL CLIENT LIBRARY SEMVERSION NUMBER HERE e.g. 1.0.0>";
   [CodePush overrideAppVersion:(NSString *)appVersion];
   ```
 
@@ -56,6 +58,7 @@ You can ignore CodePush deployment keys at this point of installation and press 
   NSDictionary *initialProps = @{
     @"organizationId" : @"<YOU WILL GET THIS FROM HSL OPEN MAAS DEVELOPER PORTAL AFTER REGISTERING>",
     @"clientId" : @"<THIS IS THE SAME CLIENT ID YOU USE TO ORDER TICKETS>",
+    @"dev" : @"YES", // Remove this if you want to start using production api
   };
   ```
 
@@ -102,9 +105,23 @@ You can ignore CodePush deployment keys at this point of installation and press 
           Bundle initialProps = new Bundle();
           initialProps.putString("organizationId", "<YOU WILL GET THIS FROM HSL OPEN MAAS DEVELOPER PORTAL AFTER REGISTERING>");
           initialProps.putString("clientId", "<THIS IS THE SAME CLIENT ID YOU USE TO ORDER TICKETS>");
+          initialProps.putString("dev", "YES"); // Remove this if you want to start using production api
           return initialProps;
         }
       };
     }
   }
+  ```
+
+  4. On `MainApplication.java` you should still override `onCreate` method and add the following:
+  ```java
+  CodePush.overrideAppVersion("<HSL CLIENT LIBRARY SEMVERSION NUMBER HERE e.g. 1.0.0>");
+  ```
+
+  Also be sure to change this:
+  ```java
+   @Override
+    protected String getJSMainModuleName() {
+      return "clientlib"; => return "clientlib";
+    }
   ```
