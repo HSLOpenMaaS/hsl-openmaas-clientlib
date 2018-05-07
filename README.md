@@ -10,7 +10,7 @@ This repository includes examples for both React Native app and Native (Java / O
 
 You can find React Native example project [here](./example/react-native), and native examples [here](./example/native).
 
-In order to purchase tickets, you will need your own backend server. You should not call the order ticket endpoint directly from the mobile app! You can find example Node.js server that can also be used to test the app [here](./example/server).
+To order tickets, you will need your own backend server. You should not call the order ticket endpoint directly from the mobile app! You can find example Node.js server that can also be used to test the app [here](./example/server).
 
 ## Requirements:
   - react-native >= 0.52.
@@ -19,7 +19,7 @@ In order to purchase tickets, you will need your own backend server. You should 
   - [react-native-svg](https://github.com/react-native-community/react-native-svg)
   - [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info)
 
-*Note: You need HSL CodePush deployment keys in order to use Client Library. Without the keys you won't be able to fetch tickets. You can get the keys after registering to [HSL OpenMaas developer portal](https://sales-api.hsl.fi/portal).
+*Note: You need HSL CodePush deployment keys in order to use the Client Library. Without the keys you won't be able to fetch tickets. You can get the keys after registering to [HSL OpenMaas developer portal](https://sales-api.hsl.fi/portal).
 
   ##### Recommended
   - [Yarn](https://yarnpkg.com/lang/en/)
