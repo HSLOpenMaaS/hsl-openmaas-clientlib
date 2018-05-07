@@ -10,7 +10,7 @@ This repository includes examples for both React Native app and Native (Java / O
 
 You can find React Native example project [here](./example/react-native), and native examples [here](./example/native).
 
-In order to purchase tickets, you will need your own backend server. You should not call the order ticket endpoint directly from the mobile app! You can find example Node.js server that can also be used to test the app [here](./example/backend).
+In order to purchase tickets, you will need your own backend server. You should not call the order ticket endpoint directly from the mobile app! You can find example Node.js server that can also be used to test the app [here](./example/server).
 
 ## Requirements:
   - react-native >= 0.52.
