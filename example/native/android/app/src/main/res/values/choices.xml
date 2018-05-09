@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="payment_types">
+        <item>Maksukortti</item>
+    </string-array>
+
+    <string-array name="valid_from">
+        <item>Heti</item>
+    </string-array>
+</resources>
