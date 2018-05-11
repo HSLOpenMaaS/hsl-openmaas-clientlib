@@ -15,7 +15,7 @@ import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 public class MainActivity extends AppCompatActivity implements DefaultHardwareBackBtnHandler {
     private ReactInstanceManager mReactInstanceManager;
 
-    private final Fragment buyTicketsFragment = BuyTicketFragment.newInstance();
+    private final Fragment buyTicketsFragment = new BuyTicketFragment();
     private final Fragment ownTicketsFragment = OwnTicketsFragment.newInstance(
             BuildConfig.ORGANIZATION_ID,
             "MaaSOperatorAssignedUniqueId",

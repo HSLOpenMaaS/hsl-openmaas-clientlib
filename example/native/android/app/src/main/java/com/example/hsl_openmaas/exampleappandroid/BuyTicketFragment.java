@@ -47,14 +47,6 @@ public class BuyTicketFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static BuyTicketFragment newInstance() {
-        BuyTicketFragment fragment = new BuyTicketFragment();
-        return fragment;
-    }
-
-    @Override
-    public void onAttach(Context context) { super.onAttach(context); }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
