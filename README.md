@@ -54,7 +54,7 @@ You can ignore CodePush deployment keys at this point of installation and press 
   4. Override default CodePush app version to get the correct bundle, e.g.
   ```objectivec
   // Objective C
-  NSString *appVersion = @"<HSL CLIENT LIBRARY SEMVERSION NUMBER HERE e.g. 1.0.0>";
+  NSString *appVersion = @"<HSL CLIENT LIBRARY SEMVERSION NUMBER HERE e.g. 1.1.0>";
   [CodePush overrideAppVersion:(NSString *)appVersion];
   ```
 
