@@ -4,16 +4,22 @@ Library for displaying HSL tickets.
 
 Usage requires registration in [HSL OpenMaas developer portal](https://sales-api.hsl.fi/portal).
 
-## Example projects
+## Example projects:
 
-You can find example projects for both iOS and Android from `/example/ios` and `/example/android` folders
+This repository includes examples for both React Native app and Native (Java / Objective-C) apps. Feel free to use either of the examples as a base for your own app.
+
+You can find React Native example project [here](./example/react-native), and native examples [here](./example/native).
+
+To order tickets, you will need your own backend server. You should not call the order ticket endpoint directly from the mobile app! You can find example Node.js server that can also be used to test the app [here](./example/server).
 
 ## Requirements:
   - react-native >= 0.52.
   - react
-  - [react-native-code-push](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/react-native#getting-started)
+  - [react-native-code-push](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/react-native#getting-started)*
   - [react-native-svg](https://github.com/react-native-community/react-native-svg)
   - [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info)
+
+*Note: You need HSL CodePush deployment keys in order to use the Client Library. Without the keys you won't be able to fetch tickets. You can get the keys after registering to [HSL OpenMaas developer portal](https://sales-api.hsl.fi/portal).
 
   ##### Recommended
   - [Yarn](https://yarnpkg.com/lang/en/)

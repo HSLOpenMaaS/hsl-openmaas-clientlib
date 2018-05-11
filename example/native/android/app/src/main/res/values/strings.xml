@@ -1,0 +1,19 @@
+<resources>
+    <!-- Headers and titles -->
+    <string name="app_name">Example App Android</string>
+    <string name="tab_buy_ticket">Osta lippu</string>
+    <string name="tab_own_tickets">Omat liput</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Labels -->
+    <string name="label_customer_type">Asiakasryhmä</string>
+    <string name="label_region_type">Matkustusalue</string>
+    <string name="label_ticket_type">Lipun tyyppi</string>
+    <string name="label_phone_number">Puhelinnumero</string>
+    <string name="label_payment_type">Maksutapa</string>
+    <string name="label_valid_from_extra">Voimassaolo 80min</string>
+    <string name="label_valid_from">Alkaa</string>
+
+    <!-- Buttons -->
+    <string name="button_buy_ticket">Osta lippu</string>
+</resources>
