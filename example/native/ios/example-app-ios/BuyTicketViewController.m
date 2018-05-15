@@ -4,6 +4,7 @@
 //
 
 #import "BuyTicketViewController.h"
+#import "DeviceUID.h"
 
 @interface BuyTicketViewController ()
 {
@@ -112,31 +113,48 @@
 
 -(NSDictionary *)constructParams {
     NSString *clientId = @"MaaSOperatorAssignedUniqueId";
-    NSString *deviceId = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    
     NSString *customerTypeId = [self getIdFromArray:_customerTypePickerData withString:_customerTypeField.text];
     NSString *ticketTypeId = [self getIdFromArray:_ticketTypePickerData withString:_ticketTypeField.text];
     NSString *regionId = [self getIdFromArray:_regionTypePickerData withString:_regionTypeField.text];
-    // NSString *validFrom = @""; // VALID FROM TIMESTAMP IS NOT YET SUPPORTED
-    NSString *phoneNumber = @"+358 12 234 1234"; // PHONE NUMBER CAN BE USED TO CHECK TICKET VALIDITY IF CUSTOMER PHONE RUNS OUT OF BATTERY WHILE TRAVELLING
+    
+    /*
+     * VALID FROM TIMESTAMP IS NOT YET SUPPORTED.
+     */
+    // NSString *validFrom = @""; 
+    
+    /*
+     * IMPORTANT!
+     * GET DEVICE ID FROM [DeviceUID uid] TO BE CONSISTENT WITH REACT NATIVE IMPLEMENTATION.
+     * OTHERWISE YOU MIGHT HAVE PROBLEMS WITH FETCHING AND SHOWING TICKETS.
+     * REMEMBER TO IMPORT DeviceUID HEADER ON TOP OF THE FILE.
+     *
+     * ONLY APPLIES TO iOS.
+     */
+    NSString *deviceId = [DeviceUID uid]; 
+    
+    /* 
+     * PHONE NUMBER CAN BE USED TO CHECK TICKET VALIDITY 
+     * IF CUSTOMER PHONE RUNS OUT OF BATTERY WHILE TRAVELLING.
+     */
+    NSString *phoneNumber = @"+358 12 234 1234"; 
     
     NSArray *keys = [NSArray arrayWithObjects:
                      @"clientId",
-                     @"deviceId",
                      @"customerTypeId",
                      @"ticketTypeId",
                      @"regionId",
                      //@"validFrom", // NOT YET SUPPORTED
+                     @"deviceId",
                      @"phoneNumber",
                      nil
                      ];
     NSArray *objects = [NSArray arrayWithObjects:
                         clientId,
-                        deviceId,
                         customerTypeId,
                         ticketTypeId,
                         regionId,
                         //validFrom, // NOT YET SUPPORTED
+                        deviceId,
                         phoneNumber,
                         nil
                         ];
