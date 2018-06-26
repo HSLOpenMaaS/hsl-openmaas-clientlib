@@ -24,14 +24,14 @@ android {
         debug {
             buildConfigField "String", "CODEPUSH_DEPLOYMENT_KEY", '"DeploymentKeyHere"'
             buildConfigField "String", "ORGANIZATION_ID", '"YourHSLOpenMaaSOrganizationId"'
-            buildConfigField "String", "HSL_CLIENT_LIBRARY_VERSION", '"1.1.0"'
+            buildConfigField "String", "HSL_CLIENT_LIBRARY_VERSION", '"1.2.0"'
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField "String", "CODEPUSH_DEPLOYMENT_KEY", '"DeploymentKeyHere"'
             buildConfigField "String", "ORGANIZATION_ID", '"YourHSLOpenMaaSOrganizationId"'
-            buildConfigField "String", "HSL_CLIENT_LIBRARY_VERSION", '"1.1.0"'
+            buildConfigField "String", "HSL_CLIENT_LIBRARY_VERSION", '"1.2.0"'
         }
     }
 }

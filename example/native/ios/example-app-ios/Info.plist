@@ -52,7 +52,7 @@
 	<key>HSL Open MaaS Organization Id</key>
 	<string>YourHSLOpenMaaSOrganizationId</string>
 	<key>HSL Open MaaS Clientlib Version</key>
-	<string>1.1.0</string>
+	<string>1.2.0</string>
 	<key>CodePushDeploymentKey</key>
 	<string>DeploymentKeyHere</string>
 </dict>

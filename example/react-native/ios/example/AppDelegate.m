@@ -12,7 +12,7 @@
 
   jsCodeLocation = [CodePush bundleURL];
   
-  NSString *appVersion = @"1.1.0";
+  NSString *appVersion = @"1.2.0";
   [CodePush overrideAppVersion:(NSString *)appVersion];
   
   NSDictionary *initialProps = @{
