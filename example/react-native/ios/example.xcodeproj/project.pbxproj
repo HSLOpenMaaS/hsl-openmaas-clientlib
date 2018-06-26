@@ -39,9 +39,6 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		85D9A2F4318B44F1B0D4276B /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33470711085C479E9BACEA18 /* libRNSVG.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		C70F5144206D1032004345F2 /* GothamRounded-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C70F5141206D1032004345F2 /* GothamRounded-Book.ttf */; };
-		C70F5145206D1032004345F2 /* GothamRounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C70F5142206D1032004345F2 /* GothamRounded-Medium.ttf */; };
-		C70F5146206D1032004345F2 /* GothamRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C70F5143206D1032004345F2 /* GothamRounded-Bold.ttf */; };
 		C70F5148206D15CF004345F2 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = C70F5147206D15CF004345F2 /* main.jsbundle */; };
 		E695C30D6C8646FDB498E2EE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AFDAF944DE4A7E8D6F1638 /* libz.tbd */; };
 		F75ABFA815E046CAAB6B334A /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FC5E0143E4D09BDA119BE /* libRNDeviceInfo.a */; };
@@ -398,9 +395,6 @@
 		8DD3536259214A07B4A01ADA /* RNSVG.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		C038539DCEA74F5286F26D18 /* libCodePush.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCodePush.a; sourceTree = "<group>"; };
-		C70F5141206D1032004345F2 /* GothamRounded-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.ttf"; sourceTree = "<group>"; };
-		C70F5142206D1032004345F2 /* GothamRounded-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.ttf"; sourceTree = "<group>"; };
-		C70F5143206D1032004345F2 /* GothamRounded-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Bold.ttf"; sourceTree = "<group>"; };
 		C70F5147206D15CF004345F2 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = example/main.jsbundle; sourceTree = "<group>"; };
 		DB9FC663F7FA427A87A50D09 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/ios/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -640,7 +634,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				C70F513E206D0F3E004345F2 /* Resources */,
 				13B07FAE1A68108700A75B9A /* example */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* exampleTests */,
@@ -709,16 +702,6 @@
 				C70F5137206D0D46004345F2 /* libRNDeviceInfo-tvOS.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C70F513E206D0F3E004345F2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C70F5143206D1032004345F2 /* GothamRounded-Bold.ttf */,
-				C70F5141206D1032004345F2 /* GothamRounded-Book.ttf */,
-				C70F5142206D1032004345F2 /* GothamRounded-Medium.ttf */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1220,11 +1203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				C70F5144206D1032004345F2 /* GothamRounded-Book.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				C70F5148206D15CF004345F2 /* main.jsbundle in Resources */,
-				C70F5146206D1032004345F2 /* GothamRounded-Bold.ttf in Resources */,
-				C70F5145206D1032004345F2 /* GothamRounded-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

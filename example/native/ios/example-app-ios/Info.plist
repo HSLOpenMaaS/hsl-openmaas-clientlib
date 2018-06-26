@@ -49,12 +49,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>GothamRounded-Book.ttf</string>
-		<string>GothamRounded-Medium.ttf</string>
-		<string>GothamRounded-Bold.ttf</string>
-	</array>
 	<key>HSL Open MaaS Organization Id</key>
 	<string>YourHSLOpenMaaSOrganizationId</string>
 	<key>HSL Open MaaS Clientlib Version</key>

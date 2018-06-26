@@ -2,7 +2,7 @@
 
 Library for displaying HSL tickets.
 
-Usage requires registration in [HSL OpenMaas developer portal](https://sales-api.hsl.fi/portal).
+Usage requires registration in [HSL OpenMaas developer portal](https://sales-api.hsl.fi/).
 
 ## Example projects:
 
@@ -19,7 +19,7 @@ To order tickets, you will need your own backend server. You should not call the
   - [react-native-svg](https://github.com/react-native-community/react-native-svg)
   - [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info)
 
-*Note: You need HSL CodePush deployment keys in order to use the Client Library. Without the keys you won't be able to fetch tickets. You can get the keys after registering to [HSL OpenMaas developer portal](https://sales-api.hsl.fi/portal).
+*Note: You need HSL CodePush deployment keys in order to use the Client Library. Without the keys you won't be able to fetch tickets. You can get the keys after registering to [HSL OpenMaas developer portal](https://sales-api.hsl.fi/).
 
   ##### Recommended
   - [Yarn](https://yarnpkg.com/lang/en/)
@@ -45,20 +45,18 @@ react-native link react-native-device-info
 You can ignore CodePush deployment keys at this point of installation and press enter with default values, but if you have already registered to HSL OpenMaas developer portal, you can type the keys when asked.
 
 #### iOS:
-  1. Add fonts from `src/fonts` folder to your iOS project. Remember to add them into `info.plist` also!
+  1. Add `main.jsbundle` from `src/ios` to your project root.
 
-  2. Add `main.jsbundle` from `src/ios` to your project root.
+  2. Add CodePush deployment key to your `info.plist`. You can get the deployment key from HSL OpenMaaS development portal.
 
-  3. Add CodePush deployment key to your `info.plist`. You can get the deployment key from HSL OpenMaaS development portal.
-
-  4. Override default CodePush app version to get the correct bundle, e.g.
+  3. Override default CodePush app version to get the correct bundle, e.g.
   ```objectivec
   // Objective C
-  NSString *appVersion = @"<HSL CLIENT LIBRARY SEMVERSION NUMBER HERE e.g. 1.1.0>";
+  NSString *appVersion = @"<HSL CLIENT LIBRARY SEMVERSION NUMBER HERE e.g. 1.2.0>";
   [CodePush overrideAppVersion:(NSString *)appVersion];
   ```
 
-  5. Create array of initial properties:
+  4. Create array of initial properties:
   ```objectivec
   // Objective C
   NSDictionary *initialProps = @{
@@ -68,7 +66,7 @@ You can ignore CodePush deployment keys at this point of installation and press 
   };
   ```
 
-  6. Initialize the RCTRootView with:
+  5. Initialize the RCTRootView with:
   ```objectivec
   // Objective C
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
@@ -78,11 +76,9 @@ You can ignore CodePush deployment keys at this point of installation and press 
   ```
 
 #### Android:
-  1. Add fonts from `src/fonts` folder to your project.
+  1. Add `index.android.bundle` from `src/android` to your project `app/assets` folder
 
-  2. Add `index.android.bundle` from `src/android` to your project `app/assets` folder
-
-  3. Add the following code to your `MainActivity.java` file:
+  2. Add the following code to your `MainActivity.java` file:
   ```java
   package com.yourexampleapp;
 
@@ -119,9 +115,9 @@ You can ignore CodePush deployment keys at this point of installation and press 
   }
   ```
 
-  4. On `MainApplication.java` you should still override `onCreate` method and add the following:
+  3. On `MainApplication.java` you should still override `onCreate` method and add the following:
   ```java
-  CodePush.overrideAppVersion("<HSL CLIENT LIBRARY SEMVERSION NUMBER HERE e.g. 1.0.0>");
+  CodePush.overrideAppVersion("<HSL CLIENT LIBRARY SEMVERSION NUMBER HERE e.g. 1.2.0>");
   ```
 
   Also be sure to change this:
