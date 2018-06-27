@@ -5,3 +5,9 @@ This example was bootstrapped with [Create React Native App](https://github.com/
 ## Requirements
 - Node
 - Yarn (recommended)
+
+## Usage
+
+Run `yarn` to install Javascript dependencies
+
+Build and run the app.
