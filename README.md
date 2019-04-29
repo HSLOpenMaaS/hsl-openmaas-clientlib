@@ -1,3 +1,7 @@
+# THIS CLIENT LIBRARY IS DEPRECATED
+
+# PLEASE CHECK [HSL SALES API PORTAL](https://sales-api.hsl.fi) FOR INFORMATION ON HOW TO DISPLAY OPEN MAAS TICKETS.
+
 # HSL OpenMaaS - Mobile Client Library
 
 Library for displaying HSL tickets bought through [HSL Sales Api](https://sales-api.hsl.fi/public-docs).
